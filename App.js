@@ -1,12 +1,13 @@
 (
     function(){
-        angular.module("myfirstapp" , [])
-        .controller("myfirstcontroller" , MainFucntion);
+        angular.module("myFirstApp" , [])
+        .controller("myFirstController" , MainFucntion);
         
-        MainFucntion.$inject =["$Scope"];
+        MainFucntion.$inject =["$scope"];
 
         function MainFucntion($scope){
-            $scope.name = "Bilal Sarfraz"
-        }
+            $scope.name = "Bilal Sarfraz";
+            
+        };
     }
 )();
