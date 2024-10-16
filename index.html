@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html ng-app="myfirstapp">
+<html ng-app="myFirstApp">
     <head>
         <script src="./angular.min.js"></script>
         <script src="./App.js"></script>
     </head>
-    <body ng-controller="myfirstcontroller">
+    <body ng-controller="myFirstController">
         <div>
-          <h2>{{name}}</h2>
+          <h2>My name is  : {{name}}</h2>
+          <h2>To find my age please press the button below</h2>
+          <button ng-click="age()">Age finder !</button>
+          <h2>{{myAge}}</h2>
         </div>
     </body>
 </html>
