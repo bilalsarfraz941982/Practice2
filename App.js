@@ -1,13 +1,12 @@
 (
     function(){
-        angular.module("myfirstmodule" , [])
-        .controller("myfirstcontroller" , MainFunction);
+        angular.module("myfirstapp" , [])
+        .controller("myfirstcontroller" , MainFucntion);
+        
+        MainFucntion.$inject =["$Scope"];
 
-        MainFunction.$inject = ["$scope","filter"];
-
-        function MainFunction($scope , $filter){
-              $scope.name = "bilal sarfraz";
-              $scope.age= "42 years old :)"
+        function MainFucntion($scope){
+            $scope.name = "Bilal Sarfraz"
         }
     }
 )();
