@@ -6,7 +6,10 @@
     </head>
     <body ng-controller="myFirstController">
         <div>
-          <h2>My name is  : {{name}}</h2>
+          <h2>My name is  : {{name | uppercase}}</h2>
+          <h3>My name is  : {{Bname}}</h3>
+          <h3>to make my brother name all in uppercase click the button</h3>
+          <button ng-click="BUCname()">Upper Case !</button>
           <h2>To find my age please press the button below</h2>
           <button ng-click="age()">Age finder !</button>
           <h2>{{myAge}}</h2>

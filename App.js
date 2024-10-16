@@ -3,16 +3,23 @@
         angular.module("myFirstApp" , [])
         .controller("myFirstController" , MainFucntion);
         
-        MainFucntion.$inject =["$scope"];
+        MainFucntion.$inject =["$scope","$filter"];
 
-        function MainFucntion($scope){
+        function MainFucntion($scope , $filter){
             $scope.name = "Bilal Sarfraz";
+            $scope.Bname = "Adeel Sarfraz"
             $scope.myAge ="";
 
 
             $scope.age = function(){
                 $scope.myAge = "i am 42 years old baby :)"
                 return $scope.myAge
+            };
+
+            $scope.BUCname = function(){
+                var aa = $filter("uppercase");
+                $scope.Bname = aa($scope.Bname);
+                return $scope.Bname
             }
         };
     }
