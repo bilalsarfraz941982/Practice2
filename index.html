@@ -16,7 +16,11 @@
           <h2>here is a picture of a jaguar xf</h2>
           <img ng-src="./Assets/{{Cpic}}.jpg">
           <h2>To change the picture of the car press the button below</h2>
-          <button ng-click="CPChanger()">Picture Changer !</button>
+          <button ng-click="CPChanger()">Picture Changer !</button><br><br>
+          <h3>Enter the name in the given field below</h3>
+          <input style="height: 20px; border-radius: 5px;" placeholder="type here ..." ng-model="input">
+          <h3>Clinte Name : {{input}}</h3>
+          <h2>{{AdNumber | ADDNumber :2:2}}</h2>
         </div>
     </body>
 </html>
