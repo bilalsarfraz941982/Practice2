@@ -9,6 +9,7 @@
             $scope.name = "Bilal Sarfraz";
             $scope.Bname = "Adeel Sarfraz"
             $scope.myAge ="";
+            $scope.Cpic = "jag"
 
 
             $scope.age = function(){
@@ -20,6 +21,11 @@
                 var aa = $filter("uppercase");
                 $scope.Bname = aa($scope.Bname);
                 return $scope.Bname
+            };
+
+            $scope.CPChanger = function(){
+                $scope.Cpic = "jag1";
+                return $scope.Cpic;
             }
         };
     }
